@@ -1,0 +1,12 @@
+[workspace]
+resolver = "3"
+members = ["crates/*"]
+
+[workspace.package]
+version = "1.0.0"
+edition = "2024"
+license = "MIT"
+
+[workspace.dependencies]
+bitcoin = { version = "0.32", features = ["serde"] }
+bitcoin-node-api = { path = "crates/bitcoin-node-api" }
